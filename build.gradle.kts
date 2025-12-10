@@ -1,5 +1,6 @@
 plugins {
 	id("java")
+	id("edu.sc.seis.launch4j") version "4.0.0"
 }
 
 repositories {
@@ -13,4 +14,8 @@ dependencies {
 
 tasks.test {
 	useJUnit()
+}
+
+launch4j {
+	mainClassName = "SwingDemo"
 }
